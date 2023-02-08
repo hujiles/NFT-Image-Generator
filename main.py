@@ -112,20 +112,29 @@ UA_HEADER = 'Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.
 
 
 class Config:
+    # Constructor for the Config class
     def __init__(self, filename):
+        # Store the filename passed as argument
         self.filename = filename
+        # Initialize the data to None
         self.data = None
 
+    # Implement the __getitem__ magic method
     def __getitem__(self, key):
+        # If the data is not loaded yet, open the file and load the data
         if self.data is None:
             with open(self.filename) as conf:
                 self.data = json.load(conf)
+        # Return the value associated with the given key
         return self.data[key]
 
+    # Implement the get method
     def get(self, key):
+        # If the data is not loaded yet, open the file and load the data
         if self.data is None:
             with open(self.filename) as conf:
                 self.data = json.load(conf)
+        # Return the value associated with the given key using the get method
         return self.data.get(key)
 
 
