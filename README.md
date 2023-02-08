@@ -1,5 +1,6 @@
 # NFT-Image-Generator
 Fork by [huji](https://github.com/hujiles), rewritten and advanced
+<br>
 Utility for creating a generative art collection from supplied image layers, especially made for making NFT collectibles.
 
 <details>
