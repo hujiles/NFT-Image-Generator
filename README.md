@@ -15,36 +15,11 @@ Utility for creating a generative art collection from supplied image layers, esp
 2. Install the dependencies ```pip3 install -r requirements.txt```.
 
 ## How to use
-1. Get an API key from [Pinata](https://app.pinata.cloud/keys).
-2. Open ``config.json`` and put the JWT (Secret access token) in ``api_key``.
-3. Adapt the config to your liking and make sure there is a sequential number at the beginning of each folder to represent the order of layers.
-4. Run ``main.py``.
+1. Run the file and make your selections, follow what the code says
+2. Enjoy the images!
 
-## File structure
-Before you start, make sure your file structure looks something like this:
-```
-NFT-Image-Generator/
-├─ main.py
-├─ config.json
-├─ 1 background/
-│  ├─ red.png
-│  ├─ green.png
-│  ├─ blue.png
-├─ 2 body/
-│  ├─ female.png
-│  ├─ male.png
-│  ├─ zombie.png
-├─ 3 eyes/
-│  ├─ sun_glasses.png
-│  ├─ normal_eyes.png
-│  ├─ vr_glasses.png
-```
-
-## Features
-- [x] Generate metadata for direct use on [OpenSea](https://docs.opensea.io/docs/metadata-standards).
-  - [x] Being able to update the image URL after the metadata is created.
-- [x] Automatically upload images and metadata to [Pinata](https://www.pinata.cloud).
-- [x] Ensure that no duplicate images will appear in the collection.
-- [x] Create a .GIF profile picture for your collection.
-- [x] Give each image a rarity value. 
-  - [x] Influence rarity by giving layers a weight.
+## TODO
+1. More services
+2. More attributes
+3. Auto proxy scraper
+4. Let me know what you'd like!
