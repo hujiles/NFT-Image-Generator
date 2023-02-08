@@ -1,17 +1,107 @@
-import json
-import os
-import shutil
-import random
-import urllib.parse as up
-from datetime import datetime
-from io import BytesIO
-from itertools import product
-from typing import Optional, Dict, List
+# json
+try:
+    import json
+except ImportError:
+    package = 'json'
+    os.system(f'pip install {package}')
+    import json
 
-from PIL import Image
-from termcolor import cprint
-from requests.sessions import Session
-from requests.exceptions import HTTPError
+# os
+try:
+    import os
+except ImportError:
+    package = 'os'
+    os.system(f'pip install {package}')
+    import os
+
+# shutil
+try:
+    import shutil
+except ImportError:
+    package = 'shutil'
+    os.system(f'pip install {package}')
+    import shutil
+
+# random
+try:
+    import random
+except ImportError:
+    package = 'random'
+    os.system(f'pip install {package}')
+    import random
+
+# urllib.parse
+try:
+    import urllib.parse as up
+except ImportError:
+    package = 'urllib.parse'
+    os.system(f'pip install {package}')
+    import urllib.parse as up
+
+# datetime
+try:
+    from datetime import datetime
+except ImportError:
+    package = 'datetime'
+    os.system(f'pip install {package}')
+    from datetime import datetime
+
+# io
+try:
+    from io import BytesIO
+except ImportError:
+    package = 'io'
+    os.system(f'pip install {package}')
+    from io import BytesIO
+
+# functs
+try:
+    import pyfuncts
+except ImportError:
+    package = 'pyfuncts'
+    os.system(f'pip install {package}')
+    import pyfuncts
+ 
+# itertools
+try:
+    from itertools import product
+except ImportError:
+    package = 'itertools'
+    os.system(f'pip install {package}')
+    from itertools import product
+
+# typing
+try:
+    from typing import Optional, Dict, List
+except ImportError:
+    package = 'typing'
+    os.system(f'pip install {package}')
+    from typing import Optional, Dict, List
+
+# PIL
+try:
+    from PIL import Image
+except ImportError:
+    package = 'PIL'
+    os.system(f'pip install {package}')
+    from PIL import Image
+
+# termcolor
+try:
+    from termcolor import cprint
+except ImportError:
+    package = 'termcolor'
+    os.system(f'pip install {package}')
+    from termcolor import cprint
+
+# requests
+try:
+    from requests.sessions import Session
+except ImportError:
+    package = 'requests'
+    os.system(f'pip install {package}')
+    from requests.sessions import Session
+    from requests.exceptions import HTTPError
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
